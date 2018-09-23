@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -c .storybook"
+  },
   "devDependencies": {
     "@storybook/react": "^3.4.11",
     "babel-core": "^6.26.3"
