@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@storybook/addon-info": "^3.4.11",
+    "@storybook/addon-knobs": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-core": "^6.26.3",
     "storybook-addon-jsx": "^5.4.0"
