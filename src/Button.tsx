@@ -1,18 +1,24 @@
 import * as React from "react";
-import './Button.css'
+import "./Button.css";
 
 export interface Props {
+  /** children nodes */
   children: React.ReactNode;
-  onClick:() => void;
-  disabled?: boolean
+  /** onClick event handler */
+  onClick: () => void;
+  /** Buttons disabled? */
+  disabled?: boolean;
 }
 const noop = () => {};
 export const Button = (props: Props) => {
-  const {children, onClick, disabled = false} = props;
-  const disabledClass = disabled? 'Button_disabled' :"";
+  const { children, onClick, disabled = false } = props;
+  const disabledClass = disabled ? "Button_disabled" : "";
   return (
-    <div className={`Button ${disabledClass}`} onClick={!disabled ? onClick : noop}>
+    <div
+      className={`Button ${disabledClass}`}
+      onClick={!disabled ? onClick : noop}
+    >
       <span>{children}</span>
     </div>
-  )
+  );
 };
